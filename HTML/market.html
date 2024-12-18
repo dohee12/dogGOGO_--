@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale= 1.0">
+    <title>동반려 Go - 반려견 나눔 마켓</title>
+    <link rel="stylesheet" href="../CSS/market.css">
+</head>
+<body>
+    <!-- 페이지 헤더 -->
+    <header class="header">
+        <div class="logo-container">
+            <a href="../HTML/dog.html"><img src="../img/Home.png" alt="메인" class="main-icon"></a>
+            <h1 class="logo">반려견 나눔 마켓</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="place.html">반려견 친화 장소</a></li>
+                <li><a href="donation.html">유기견 직접 기부</a></li>
+                <li><a href="diy-Food.html">반려견 음식 만들기</a></li>
+                <li><a href="diy-Item.html">반려견 물품 만들기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 상품 추가 버튼 -->
+    <button id="add-item-btn">상품 등록</button>
+
+    <!-- 상품 리스트를 담을 메인 섹션 -->
+    <section id="market">
+        <div class="item-list" id="item-list">
+            <!-- 상품 아이템 추가 -->
+        </div>
+    </section>
+
+    <!-- 상품 추가 모델 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>상품 등록</h2>
+            <input type="file" id="item-image" accept="image/*">
+            <input type="text" id="item-name" placeholder="상품명 입력">
+            <input type="text" id="item-price" placeholder="가격 입력">
+            <textarea id="item-description" placeholder="상품 설명 입력"></textarea>
+            <button id="save-item-btn">작성 완료</button>
+        </div>
+    </div>
+
+    <!--상세보기 모델-->
+    <div id="view-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="view-close">&times;</span>
+            <h2 id="view-item-name"></h2>
+            <img id="view-item-image" src="" alt="상품 이미지">
+            <p id="view-item-price"></p>
+            <p id="view-item-description"></p>
+            <button class="view-item-button" onclick="alert('구매문의가 완료되었습니다.')">구매문의하기</button>
+        </div>
+    </div>
+
+    <!-- JS 파일 연결 -->
+    <script src="../JS/market.js"></script>
+</body>
+</html>

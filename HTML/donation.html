@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동반려 Go - 유기견 직접 기부</title>
+    <link rel="stylesheet" href="../CSS/donation.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <a href="../HTML/dog.html"><img src="../img/Home.png" alt="메인" class="main-icon"></a>
+            <h1 class="logo">유기견 직접 기부</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="place.html">반려견 친화 장소</a></li>
+                <li><a href="market.html">반려견 나눔 마켓</a></li>
+                <li><a href="diy-Food.html">반려견 음식 만들기</a></li>
+                <li><a href="diy-Item.html">반려견 물품 만들기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Donation Container -->
+    <div id="donation-container">
+        <h1>유기견 기부</h1>
+        
+        <!-- Dog List Section -->
+        <section id="dog-list">
+            <div id="dog-items"></div>
+        </section>
+
+        <!-- Dog Details Section -->
+        <section id="dog-details" style="display:none;">
+            <h2>유기견 상세 정보</h2>
+            <div id="dog-details-info">
+                <img id="dog-image" src="" alt="유기견 사진" class="dog-image">
+                <h3 id="dog-name"></h3>
+                <p id="dog-age"></p>
+                <p id="dog-description"></p>
+            </div>
+
+            <label for="donation-amount">기부 금액 선택:</label>
+            <select id="donation-amount">
+                <option value="5000">5,000원</option>
+                <option value="10000">10,000원</option>
+                <option value="20000">20,000원</option>
+                <option value="30000">30,000원</option>
+                <option value="40000">40,000원</option>
+                <option value="50000">50,000원</option>
+                <option value="60000">60,000원</option>
+                <option value="70000">70,000원</option>
+                <option value="80000">80,000원</option>
+                <option value="90000">90,000원</option>
+                <option value="100000">100,000원</option>
+            </select>
+
+            <button id="donate-button" onclick="donate()">기부하기</button>
+            <button id="back-button" onclick="goBack()">돌아가기</button>
+        </section>
+    </div>
+
+    <!-- JS 연결 -->
+    <script src="../JS/donation.js"></script>
+</body>
+</html>

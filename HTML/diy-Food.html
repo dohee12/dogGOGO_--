@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동반려 Go - 반려견 음식 만들기</title>
+    <link rel="stylesheet" href="../CSS/diy-Food.css">
+</head>
+<body>
+    <!-- 페이지 헤더 -->
+    <header>
+        <header class="header">
+            <div class="logo-container">
+                <a href="../HTML/dog.html"><img src="../img/Home.png" alt="메인" class="main-icon"></a>
+                <h1 class="logo">반려견 음식 만들기</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="place.html">반려견 친화 장소</a></li>
+                    <li><a href="market.html">반려견 나눔 마켓</a></li>
+                    <li><a href="donation.html">유기견 직접 기부</a></li>
+                    <li><a href="diy-Item.html">반려견 물품 만들기</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <aside>
+        <p>반려견을 위한 DIY 음식을 공유하세요</p>
+    </aside>
+
+    <!-- 음식 추가 버튼 -->
+    <section id="food-add-btn-section">
+        <button id="show-form-btn">음식 추가하기</button>
+    </section>
+
+    <!-- 음식 입력 폼 (이미지 업로드 필드 추가) -->
+    <section id="food-form" style="display: none;">
+        <h2>음식 추가하기</h2>
+        <!-- 이미지 업로드 입력 필드 -->
+        <input type="file" id="food-image" accept="image/*">
+        <img id="food-image-preview" src="" alt="이미지 미리보기" style="display: none; width: 200px; margin-top: 10px;">
+        <input type="text" id="food-title" placeholder="음식 제목">
+        <textarea id="food-description" placeholder="음식 설명을 입력하세요"></textarea>
+        <textarea id="food-materials" placeholder="필요한 재료를 입력하세요"></textarea>
+        <textarea id="food-step-number" placeholder="조리 순서를 숫자 형식으로 입력하세요"></textarea>
+        <input type="url" id="food-link" placeholder="유튜브 또는 블로그 링크">
+        <button id="add-food-btn">음식 추가</button>
+    </section>
+
+    <!-- 음식 목록 -->
+    <section id="food-list">
+        <h2>공유된 음식</h2>
+        <div id="foods"></div>
+    </section>
+
+    <script src="../JS/diy-Food.js"></script>
+</body>
+</html>
